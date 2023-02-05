@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Odoo IT now: Pre Loader in website -->
+    <template id="user_navbar_odooitnow" inherit_id="web.layout">
+        <xpath expr="//body" position="inside">
+            <div id="loading">
+                <div id="status">&amp;nbsp;</div>
+                <div id="center_image"></div>
+            </div>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet" />
+            
+            <!-- <div id="loading"></div> -->
+            <script language="javascript" type="text/javascript">
+           function onReady(callback) {
+          var intervalId = window.setInterval(function() {
+            if (document.getElementsByTagName('body')[0] !== undefined) {
+              window.clearInterval(intervalId);
+              callback.call(this);
+            }
+          }, 1500);
+        }
+
+        function setVisible(selector, visible) {
+          document.querySelector(selector).style.display = visible ? 'block' : 'none';
+        }
+
+        onReady(function() {
+          setVisible('#loading', false);
+        });
+            </script>
+        </xpath>
+    </template>
+ 
+ </odoo>
