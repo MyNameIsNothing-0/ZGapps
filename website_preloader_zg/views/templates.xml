@@ -5,11 +5,13 @@
     <template id="user_navbar_odooitnow" inherit_id="web.layout">
         <xpath expr="//body" position="inside">
             <div id="loading">
+                <t t-set="website_preloader_image" t-value="'data:image/*;base64,'+str(request.env['ir.config_parameter'].sudo().get_param('website_preloader_zg.website_preloader_image'))" />
+        
                 <div id="status">&amp;nbsp;</div>
-                <div id="center_image"></div>
+                <div id="center_image" t-attf-style="background-image: url('#{website_preloader_image}');" ></div>
             </div>
             <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"/>
-            <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet" />
+            <!-- <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet" /> -->
             
             <!-- <div id="loading"></div> -->
             <script language="javascript" type="text/javascript">
