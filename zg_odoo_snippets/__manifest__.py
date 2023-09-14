@@ -16,11 +16,15 @@
     'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','website'],
 
     # always loaded
     'data': [
-        'views/views.xml',
         'views/templates.xml',
     ],
+    'images': [
+        'static/description/banner.gif',
+    ],
+    'installable': True,
+    'application': False,
 }

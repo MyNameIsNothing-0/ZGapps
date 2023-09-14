@@ -1,17 +1,9 @@
 "use strict";
-// var canvas = document.getElementById("pretty-bg");
-// var canvas1 = document.getElementById("pretty-bg1");
 const elements = document.getElementsByClassName("odoo-alx-canvas");
-
-// Loop through the collection of elements
 for (let i = 0; i < elements.length; i++) {
-    // Access each element
     const element = elements[i];
-    
-    // Do something with the element
-    console.log(element.textContent);
     var canvas = elements[i]
-    if (canvas) {
+if (canvas) {
     canvas.width = canvas.clientWidth, canvas.height = canvas.clientHeight;
     let e = {
         SIM_RESOLUTION: 128,
@@ -21,7 +13,7 @@ for (let i = 0; i < elements.length; i++) {
         PRESSURE_DISSIPATION: .8,
         PRESSURE_ITERATIONS: 20,
         CURL: 20,
-        SPLAT_RADIUS: .8,
+        SPLAT_RADIUS: 1.5,
         SHADING: !0,
         COLORFUL: !0,
         PAUSED: !1,
@@ -372,7 +364,7 @@ for (let i = 0; i < elements.length; i++) {
         }),
         setInterval(function() {
             my_color = generateColor()
-        }, 500),
+        }, 1000),
         canvas.addEventListener("touchmove", e => {
             e.preventDefault();
             const r = e.targetTouches;
@@ -399,6 +391,6 @@ for (let i = 0; i < elements.length; i++) {
         window.addEventListener("keydown", n => {
             "p" === n.key && (e.PAUSED = !e.PAUSED)
         })
-	}
+    }
 }
 
