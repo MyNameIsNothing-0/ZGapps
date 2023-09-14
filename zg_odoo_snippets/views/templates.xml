@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+ <template id="zg_odoo_snippets_color_snippet" name="Color BG">
+      <section  class="zg_odoo_snippets_color_snippet">
+          <div class="container s_allow_columns" style="position: relative; text-align: center;">
+            <canvas class="odoo-alx-canvas" style="width: 100vw;height: 100%;"></canvas>
+            <!-- <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; z-index: 2;">Your H1 Title</h1> -->
+            <h1 style='position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: gray;  padding: 10px; border: 5px solid white; font-weight:bold;font-size: 62px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, "Liberation Sans", Arial, "Odoo Unicode Support Noto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";'>Your H1 Title</h1>
+          </div>
+      </section>
+   </template>
+   <template id="snippet_id_structure" inherit_id="website.snippets" name="Custom snippets">
+      <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+         
+         <t t-snippet="zg_odoo_snippets.zg_odoo_snippets_color_snippet"
+            t-thumbnail="/zg_odoo_snippets/static/description/icon.png"/>
+
+         
+      </xpath>
+   </template>
+   <record id="zg_odoo_snippets.zg_odoo_snippets_color_snippet_js" model="ir.asset">
+      <field name="name">Chart 000 JS</field>
+      <field name="bundle">web.assets_frontend</field>
+      <field name="path">zg_odoo_snippets/static/src/js/000.js</field>
+  </record>
+
+    </data>
+</odoo>
