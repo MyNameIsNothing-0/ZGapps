@@ -1,6 +1,6 @@
 <odoo>
     <data>
- <template id="zg_odoo_snippets_color_snippet" name="Colorful">
+ <template id="zg_odoo_snippets_color_snippet" name="Color BG">
       <section  class="zg_odoo_snippets_color_snippet">
           <div class="container s_allow_columns" style="position: relative; text-align: center;">
             <canvas class="odoo-alx-canvas" style="width: 100vw;height: 100%;"></canvas>
@@ -13,7 +13,7 @@
       <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
          
          <t t-snippet="zg_odoo_snippets.zg_odoo_snippets_color_snippet"
-            t-thumbnail="/uc_snippets/static/src/assets/img/apple-touch-icon.png"/>
+            t-thumbnail="/zg_odoo_snippets/static/description/icon.png"/>
 
          
       </xpath>

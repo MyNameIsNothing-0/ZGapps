@@ -14,6 +14,8 @@
     'category': 'Uncategorized',
     'version': '0.1',
     'license': 'LGPL-3',
+    'price': 1.00,
+    'currency': 'EUR',
 
     # any module necessary for this one to work correctly
     'depends': ['base','website'],
