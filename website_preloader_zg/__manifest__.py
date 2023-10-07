@@ -3,11 +3,11 @@
     'name': "Website Preloader",
 
     'summary': """
-
+            Add a stylish preloader to your Odoo website.
         """,
 
     'description': """
-        Long description of module's purpose
+        Enhance your website with a customizable preloader.
     """,
 
     'author': "Zero Gravity",
@@ -16,11 +16,11 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Website',
     'version': '0.1',
     'license': 'LGPL-3',
-    'price': 1.00,
-    'currency': 'EUR',
+    'price': 5.00,
+    'currency': 'USD',
 
     # any module necessary for this one to work correctly
     'depends': ['base','web'],

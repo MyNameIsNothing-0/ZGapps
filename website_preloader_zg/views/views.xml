@@ -19,8 +19,40 @@
                                 <div class="o_setting_right_pane">
                                     <div class="content-group">
                                         <div class="row mt16">
+                                            <label string="Enable Loader" for="website_preloader_enable" class="col-lg-3 o_light_label"/>
+                                            <field name="website_preloader_enable" />
+                                           
+                                        </div>
+                                        <div class="row mt16">
                                             <label string="Website Preloader Icon" for="website_preloader_image" class="col-lg-3 o_light_label"/>
                                             <field name="website_preloader_image" widget="image" />
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box"
+                                 id="default_taxes">
+                                <div class="o_setting_left_pane"/>
+                                <div class="o_setting_right_pane">
+                                   
+                                    <div class="content-group">
+                                       
+                                        <div class="row mt16">
+                                            <label string="Website Preloader Color" for="website_preloader_color" class="col-lg-3 o_light_label"/>
+                                            <field name="website_preloader_color" widget="color" />
+                                           
+                                        </div>
+                                        <div class="row mt16">
+                                            <label string="Website Preloader Background Color" for="website_preloader_bg_color" class="col-lg-3 o_light_label"/>
+                                            <field name="website_preloader_bg_color" widget="color" />
+                                           
+                                        </div>
+                                        <div class="row mt16">
+                                            <label string="Website Preloader Animation" for="website_preloader_animation" class="col-lg-3 o_light_label"/>
+                                            <field name="website_preloader_animation" />
                                            
                                         </div>
                                     </div>
