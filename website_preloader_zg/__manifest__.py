@@ -27,8 +27,6 @@
 
     # always loaded
     'data': [
-        'views/views.xml',
-        'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
@@ -36,10 +34,8 @@
     'assets': {
         
         'web.assets_frontend': [
-            'website_preloader_zg/static/src/css/*.css',
         ],
     },
     'images': [
-        'static/description/banner.png',
     ]
 }
