@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_api_access_token,access_api_access_token,model_api_access_token,,1,1,1,1
-access_odoo_api_webhook,access_odoo_api_webhook,model_odoo_api_webhook,,1,1,1,1
-access_odoo_api_webhook_response,access_odoo_api_webhook_response,model_odoo_api_webhook_response,,1,1,1,1
